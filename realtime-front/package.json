@@ -1,7 +1,10 @@
 {
+  "main": "public/electron.js",
   "name": "realtime-front",
   "version": "0.1.0",
-  "private": true,
+  "author": "sun",
+  "description": "realtime",
+  "private": false,
   "dependencies": {
     "@stomp/stompjs": "^7.0.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -22,6 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "electron-start": "electron .",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -45,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@types/sockjs-client": "^1.5.1"
+    "@types/sockjs-client": "^1.5.1",
+    "electron": "^26.1.0"
   }
 }
