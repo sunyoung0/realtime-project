@@ -1,0 +1,144 @@
+#room {
+  width: 100vw;
+  height: 100vh;
+}
+
+.room-header {
+  padding: 0 5vw;
+
+  height: 10vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgba(75, 134, 245, 0.3);
+}
+
+.room-number {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.room-back-button {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+}
+
+.room-back-button:hover {
+  cursor: pointer;
+  color: rgba(150, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+.room-container {
+  padding: 2vh;
+
+  height: 80vh;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  background-color: rgba(21, 54, 238, 0.5);
+}
+
+.room-footer {
+  padding: 0 20px;
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  background-color: rgba(75, 134, 245, 0.3);
+}
+
+.room-send-input {
+  flex: 1;
+  height: 4vh;
+
+  border: none;
+  outline: none;
+}
+
+.room-send-button {
+  width: 80px;
+  height: 4vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 1);
+
+  border-radius: 5px;
+}
+
+.room-send-button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.message-box-mine {
+  display: flex;
+  flex-direction: row-reverse; /* 오른쪽부터 쌓임*/
+}
+
+.message-mine {
+  padding: 8px;
+  border-radius: 4px;
+
+  max-width: 30vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(234, 236, 66, 0.8);
+
+  font-weight: 500;
+}
+
+.message-datetime {
+  margin: 0 4px;
+  display: flex;
+  flex-direction: column-reverse;
+
+  font-size: 12px;
+}
+
+.message-box-others {
+  display: flex;
+}
+
+.message-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.message-nickname {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.message-container-others {
+  display: flex;
+}
+
+.message-other {
+  padding: 8px;
+  border-radius: 4px;
+
+  max-width: 30vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.8);
+
+  font-weight: 500;
+}

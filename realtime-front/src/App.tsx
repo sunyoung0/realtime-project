@@ -2,6 +2,7 @@ import "./App.css";
 import { usePathStore } from "./stores";
 import Enter from "./views/Enter";
 import Main from "./views/Main";
+import Room from "./views/Room";
 
 //              component : Root 컴포넌트           //
 function App() {
@@ -15,7 +16,7 @@ function App() {
       {
         path === '/' ? (<Main />) :
         path === '/enter' ? (<Enter />) :
-        path === '/room' ? (<></>) :
+        path === '/room' ? (<Room />) :
         (<></>)
       }
     </div>
